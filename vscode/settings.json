@@ -1,0 +1,71 @@
+{
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
+    "workbench.list.openMode": "doubleClick",
+    "cargo.automaticCheck": false,
+    "rust-analyzer.cargo.target": null,
+    "rust-analyzer.check.allTargets": false,
+    "rust-analyzer.check.command": "clippy",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "cmake.configureOnOpen": false,
+    "editor.formatOnSave": true,
+    "git.openRepositoryInParentFolders": "never",
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": false,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-k><z>": false,
+        "<C-w>": false,
+        "<C-y>": false,
+        "<enter>": true,
+        "<C-d>": false,
+    }
+}
