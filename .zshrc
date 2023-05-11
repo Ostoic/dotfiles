@@ -129,4 +129,4 @@ export GIT_EDITOR=nvim
 alias vim='nvim'
 alias vim=nvim
 alias chatblade='python -m chatblade'
-source ./.openai_api_key.sh
+source ~/.openai_api_key.sh
