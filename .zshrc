@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,4 +125,8 @@ source $HOME/.config/broot/launcher/bash/br
 
 #alias code='vscodium' 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export GIT_EDITOR=vim
+export GIT_EDITOR=nvim
+alias vim='nvim'
+alias vim=nvim
+alias chatblade='python -m chatblade'
+source ./.openai_api_key.sh
