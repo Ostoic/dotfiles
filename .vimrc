@@ -2,7 +2,7 @@ colorscheme PaperColor
 
 set laststatus=2
 set nocompatible
-set number
+set relativenumber
 set shiftwidth=2
 set tabstop=2
 set hlsearch
