@@ -67,5 +67,6 @@
         "<C-y>": false,
         "<enter>": true,
         "<C-d>": false,
-    }
+    },
+    "vim.smartRelativeLine": true
 }
