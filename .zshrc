@@ -130,3 +130,11 @@ alias vim='nvim'
 alias vim=nvim
 alias chatblade='python -m chatblade'
 source ~/.openai_api_key.sh
+alias enter-venv='source .venv/bin/activate'
+export PATH=$PATH:/home/fure/.cargo/bin
+export PATH=$PATH:/home/fure/.local/bin
+alias l='ls -lh'
+
+export BACKUP="/run/media/$USER/backup/"
+export MUSIC="/run/media/fure/CDA0-2AD4/Music/"
+alias speedtest="librespeed-cli --telemetry-level disabled"
