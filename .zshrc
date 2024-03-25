@@ -123,14 +123,25 @@ source $HOME/.config/broot/launcher/bash/br
 # export LIBCLANG_PATH="$HOME/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-unknown-linux-gnu/lib"
 #export PIP_USER=no
 
-#alias code='vscodium' 
+if which vscodium >/dev/null; then
+  alias code='vscodium' 
+fi
+
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export GIT_EDITOR=nvim
-alias vim='nvim'
-alias vim=nvim
+
+# Alias most modern vim
+if which nvim >/dev/null; then
+  alias vim=nvim
+elif ! which vim; then
+  alias vim=vi
+fi
+
+export GIT_EDITOR=vim
+
 alias chatblade='python -m chatblade'
 source ~/.openai_api_key.sh
-alias enter-venv='source .venv/bin/activate'
+
+alias enter-venv='source .venv/bin/activate || source .venv/Scripts/activate'
 export PATH=$PATH:/home/fure/.cargo/bin
 export PATH=$PATH:/home/fure/.local/bin
 alias l='ls -lh'
