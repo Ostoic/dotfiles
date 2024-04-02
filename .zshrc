@@ -130,7 +130,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # Alias most modern vim
 if which nvim >/dev/null; then
   alias vim=nvim
-elif ! which vim; then
+elif ! which vim >/dev/null; then
   alias vim=vi
 fi
 
