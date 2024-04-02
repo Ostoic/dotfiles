@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,8 +117,6 @@ PERL_LOCAL_LIB_ROOT="$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
 PERL_MB_OPT="--install_base \"$HOME/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"; export PERL_MM_OPT;
 
-source $HOME/.config/broot/launcher/bash/br
-
 # export PATH="$HOME/.local/bin:$HOME/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-unknown-linux-gnu/bin/:$PATH"
 # export LIBCLANG_PATH="$HOME/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-unknown-linux-gnu/lib"
 #export PIP_USER=no
@@ -139,7 +137,7 @@ fi
 export GIT_EDITOR=vim
 
 alias chatblade='python -m chatblade'
-source ~/.openai_api_key.sh
+#source ~/.openai_api_key.sh
 
 alias enter-venv='source .venv/bin/activate || source .venv/Scripts/activate'
 export PATH=$PATH:/home/fure/.cargo/bin
