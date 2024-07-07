@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Use vim as the default git editor
-export GIT_EDITOR=nvim
+export GIT_EDITOR=vim
 
 # Add local bins to PATH
 export PATH=$PATH:$HOME/.local/bin
