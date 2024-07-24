@@ -118,3 +118,12 @@ export GIT_EDITOR=vim
 
 # Add local bins to PATH
 export PATH=$PATH:$HOME/.local/bin
+
+alias nvim=vim
+
+alias gl='git log'
+alias gc='git commit'
+alias gst='git status'
+
+export GIT_EDITOR=vim
+export GIT_SSH_COMMAND="ssh -i ~/.ssh/shaun.priv -o IdentitiesOnly=true"
