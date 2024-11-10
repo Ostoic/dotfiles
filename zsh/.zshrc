@@ -7,7 +7,6 @@ plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/fzf"
 plug "Aloxaf/fzf-tab"
 plug "Freed-Wu/fzf-tab-source"
-plug "zap-zsh/web-search"
 plug "atoftegaard-git/zsh-omz-autocomplete"
 plug "embeddedpenguin/sanekeybinds"
 
