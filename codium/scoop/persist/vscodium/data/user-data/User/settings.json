@@ -3,23 +3,10 @@
     "notebook.lineNumbers": "on",
     "explorer.confirmDelete": false,
     "workbench.startupEditor": "none",
-    "terminal.explorerKind": "both",
     "jupyter.askForKernelRestart": false,
     "[python]": {
         "editor.formatOnType": true,
         "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "jupyter.widgetScriptSources": [
-        "jsdelivr.com",
-        "unpkg.com"
-    ],
-    "remote.SSH.remotePlatform": {
-        "100.112.29.60": "linux",
-        "172.16.2.178": "linux",
-        "172.16.2.23": "linux",
-        "gateway": "linux",
-        "192.168.75.116": "linux",
-        "172.16.2.179": "linux"
     },
     "zenMode.hideLineNumbers": false,
     "git.openRepositoryInParentFolders": "never",
@@ -28,56 +15,23 @@
         "--preview"
     ],
     "terminal.integrated.cursorBlinking": true,
-    // "terminal.integrated.profiles.windows": {
-    //     "MSYS2": {
-    //         "path": "${userHome}\\scoop\\apps\\msys2\\current\\usr\\bin\\bash",
-    //         "args": [
-    //             "--login",
-    //             "-i"
-    //         ],
-    //         "env": {
-    //             "MSYSTEM": "MINGW64",
-    //             "CHERE_INVOKING": "1",
-    //             "MSYS2_PATH_TYPE": "inherit"
-    //         }
-    //     },
-    //     "PowerShell": {
-    //         "source": "PowerShell",
-    //         "icon": "terminal-powershell"
-    //     },
-    //     "Command Prompt": {
-    //         "path": [
-    //             "${env:windir}\\Sysnative\\cmd.exe",
-    //             "${env:windir}\\System32\\cmd.exe"
-    //         ],
-    //         "args": [],
-    //         "icon": "terminal-cmd"
-    //     },
-    // },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
+        "MSYS2": {
+            "source": "Git Bash",
+            "args": [
+                "-c",
+                "msys2",
+            ],
         },
         "Command Prompt": {
             "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
+                "${userHome}\\scoop\\shims\\msys2.cmd",
             ],
             "args": [],
             "icon": "terminal-cmd"
         },
-        "MSYS2": {
-            "path": "${userHome}\\scoop\\apps\\msys2\\current\\usr\\bin\\bash",
-            // "source": "MSYS2",
-            "env": {
-                "MSYSTEM": "MINGW64",
-                "CHERE_INVOKING": "1",
-                "MSYS2_PATH_TYPE": "inherit"
-            }
-        }
     },
-    "terminal.integrated.defaultProfile.windows": "MSYS2",
     "notebook.output.textLineLimit": 300,
     "vim.easymotion": true,
     "vim.surround": true,
@@ -137,7 +91,6 @@
         "<C-x>": false,
         "<ALT>": true
     },
-    "editor.formatOnSave": true,
     "extensions.ignoreRecommendations": true,
     "redhat.telemetry.enabled": false,
     "git.confirmSync": false,
@@ -147,28 +100,6 @@
     "terminal.integrated.fontSize": 13,
     "gitlens.mode.active": "zen",
     "window.zoomLevel": -1,
-    "nebulaOni.update.restoreConfiguration": {
-        "themeSettings": {
-            "background": "Grey",
-            "main": "Bumblebee",
-            "highlight": "Ultra Violet",
-            "focusBorder": "ON",
-            "fontStyle": "Italic",
-            "syntaxBrightness": "Normal",
-            "comments": "Dark Violet",
-            "favorite": "OFF"
-        },
-        "favoriteSettings": {
-            "background": "Glacial Blue",
-            "main": "Sakura",
-            "highlight": "Ultra Violet",
-            "focusBorder": "ON",
-            "fontStyle": "Italic",
-            "syntaxBrightness": "Dimmed",
-            "comments": "Dark Magenta",
-            "favorite": "Nebula Oni (Pegasus)"
-        }
-    },
     "jupyter.logging.level": "error",
     "remote.autoForwardPortsSource": "hybrid",
     "powershell.promptToUpdatePowerShell": false,
@@ -178,7 +109,21 @@
     "scm.showIncomingChanges": "never",
     "scm.showOutgoingChanges": "never",
     "git.autofetch": true,
-    "git.path": "${userHome}\\scoop\\apps\\msys2\\current\\usr\\bin\\git",
+    "git.path": "${userHome}\\scoop\\shims\\git.exe",
     "python.languageServer": "None",
     "terminal.integrated.useWslProfiles": false,
+    "debugpy.debugJustMyCode": false,
+    "jupyter.debugJustMyCode": false,
+    "rust-analyzer.check.workspace": true,
+    "terminal.integrated.enableVisualBell": true,
+    "astGrep.serverPath": "C:\\Users\\Owner\\scoop\\apps\\ast-grep\\current\\ast-grep.exe",
+    "chat.commandCenter.enabled": false,
+    "window.menuBarVisibility": "compact",
+    "git.blame.statusBarItem.enabled": true,
+    "editor.formatOnSave": true,
+    "python.experiments.enabled": false,
+    "python.REPL.enableREPLSmartSend": false,
+    "editor.accessibilitySupport": "off",
+    "git.blame.editorDecoration.enabled": true,
+    "telemetry.feedback.enabled": false,
 }
