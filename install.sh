@@ -36,5 +36,5 @@ fi
 echo Installing "$MODULES" for user "$(whoami)"
 
 for MODULE in $MODULES ; do
-    echo stow -t "$HOME" "$MODULE"
+    stow -t "$HOME" "$MODULE"
 done
