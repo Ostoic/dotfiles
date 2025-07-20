@@ -1,5 +1,3 @@
-colorscheme PaperColor
-
 set laststatus=2
 set nocompatible
 set relativenumber

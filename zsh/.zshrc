@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,22 +111,10 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-PATH="$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"$HOME/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"; export PERL_MM_OPT;
-
-source $HOME/.config/broot/launcher/bash/br
-
-# export PATH="$HOME/.local/bin:$HOME/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-unknown-linux-gnu/bin/:$PATH"
-# export LIBCLANG_PATH="$HOME/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-unknown-linux-gnu/lib"
-#export PIP_USER=no
-
-#alias code='vscodium' 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export GIT_EDITOR=nvim
-alias vim='nvim'
-alias vim=nvim
-alias chatblade='python -m chatblade'
-source ~/.openai_api_key.sh
+
+# Use vim as the default git editor
+export GIT_EDITOR=vim
+
+# Add local bins to PATH
+export PATH=$PATH:$HOME/.local/bin
