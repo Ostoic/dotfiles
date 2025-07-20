@@ -28,13 +28,13 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [ "$ALL" -eq 1 ]; then
-    echo hi
-    MODULES=$(ls ./*/)
+    MODULES=$(find . -maxdepth 1 -type d -exec basename {} \; | grep -vE '^.$' | grep -vE '^.git$' | tr '\n' ' ')
 else
     MODULES="${POSITIONAL_ARGS[*]}"
 fi
 
 echo Installing "$MODULES" for user "$(whoami)"
 
-# Stow the modules.
-stow -t "$HOME" "$MODULES"
+for MODULE in $MODULES ; do
+    echo stow -t "$HOME" "$MODULE"
+done
