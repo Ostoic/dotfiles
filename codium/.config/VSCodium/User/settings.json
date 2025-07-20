@@ -171,4 +171,22 @@
     "git.path": "${userHome}\\scoop\\apps\\msys2\\current\\usr\\bin\\git",
     "python.languageServer": "None",
     "terminal.integrated.useWslProfiles": false,
+    // Nix LSP
+    "nix.enableLanguageServer": true,
+    "nix.formatterPath": "alejandra",
+    // LSP config can be passed via the ``nix.serverSettings.{lsp}`` as shown below.
+    "nix.serverSettings": {
+        // check https://github.com/oxalica/nil/blob/main/docs/configuration.md for all options available
+        "nil": {
+            // "diagnostics": {
+            //  "ignored": ["unused_binding", "unused_with"],
+            // },
+            "formatting": {
+                "command": [
+                    "alejandra"
+                ],
+            },
+        },
+    },
+    "nix.serverPath": "/etc/profiles/per-user/owner/bin/nil"
 }
